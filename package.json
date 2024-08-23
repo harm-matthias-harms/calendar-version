@@ -6,8 +6,7 @@
   "license": "MIT",
   "main": "dist/index.js",
   "scripts": {
-    "start": "npx ncc run ./src/index.ts",
-    "build": "npx ncc build ./src/index.ts",
+    "build": "npx ncc build ./src/index.js",
     "test": "vitest --coverage",
     "lint": "standard"
   },
