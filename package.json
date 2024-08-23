@@ -1,0 +1,17 @@
+{
+  "name": "calendar-version",
+  "description": "GitHub action for calendar versioning",
+  "private": true,
+  "license": "MIT",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "npx ncc run ./src/index.ts",
+    "build": "npx ncc build ./src/index.ts",
+    "test": "jest --coverage",
+    "lint": "standard"
+  },
+  "dependencies": {
+    "jest": "^29.7.0",
+    "standard": "^17.1.0"
+  }
+}
