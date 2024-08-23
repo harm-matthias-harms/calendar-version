@@ -4,6 +4,11 @@ on:
   workflow_call:
 
 jobs:
+  actionlint:
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@v4
+      - uses: reviewdog/action-actionlint@v1
   test-calendar-version:
     runs-on: ubuntu-latest
     steps:
