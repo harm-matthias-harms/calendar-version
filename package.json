@@ -2,18 +2,16 @@
   "name": "calendar-version",
   "description": "GitHub action for calendar versioning",
   "private": true,
-  "type": "module",
   "license": "MIT",
   "main": "dist/index.js",
   "scripts": {
-    "build": "esbuild ./src/index.js --bundle --outfile=dist/index.js --platform=node --format=esm",
+    "build": "ncc build ./src/index.js -m",
     "test": "vitest --coverage",
     "lint": "standard"
   },
   "dependencies": {
     "@actions/core": "^1.10.1",
-    "@actions/github": "^6.0.0",
-    "esbuild": "^0.23.1"
+    "@actions/github": "^6.0.0"
   },
   "devDependencies": {
     "@vercel/ncc": "^0.38.1",
