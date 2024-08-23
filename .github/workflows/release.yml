@@ -1,8 +1,12 @@
 name: Release
 
 on:
+  push:
+    branches:
+      - main
   release:
-    types: [published, edited]
+    types:
+      - published
 
 jobs:
   nodejs:
@@ -12,6 +16,7 @@ jobs:
     uses: ./.github/workflows/action.yml
   release:
     runs-on: ubuntu-latest
+    if: ${{ github.ref_type == 'tag' }}
     needs:
       - nodejs
       - action
