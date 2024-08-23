@@ -1,0 +1,10 @@
+name: Release
+
+on:
+  release:
+    types: [published, edited]
+
+jobs:
+  nodejs:
+    uses: ./workflows/nodejs.yml
+    secrets: inherit

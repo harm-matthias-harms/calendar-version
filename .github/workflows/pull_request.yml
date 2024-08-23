@@ -4,30 +4,6 @@ on:
   pull_request:
 
 jobs:
-  lint:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version-file: ".tool-versions"
-          cache: "npm"
-      - run: npm ci
-      - run: npm run lint
-  test:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version-file: ".tool-versions"
-          cache: "npm"
-      - run: npm ci
-      - run: npm run test -- --reporter=junit --outputFile=junit.xml
-      - uses: codecov/codecov-action@v4
-        env:
-          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
-      - uses: codecov/test-results-action@v1
-        if: ${{ !cancelled() }}
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
+  nodejs:
+    uses: .github/workflows/nodejs.yml
+    secrets: inherit
