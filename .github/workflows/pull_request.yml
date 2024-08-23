@@ -23,7 +23,7 @@ jobs:
           node-version-file: ".tool-versions"
           cache: "npm"
       - run: npm ci
-      - run: npm run test -- --reporter=junit
+      - run: npm run test -- --reporter=junit --outputFile=junit.xml
       - uses: codecov/codecov-action@v4
         env:
           CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
