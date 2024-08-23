@@ -5,5 +5,5 @@ on:
 
 jobs:
   nodejs:
-    uses: .github/workflows/nodejs.yml
+    uses: ./.github/workflows/nodejs.yml
     secrets: inherit
