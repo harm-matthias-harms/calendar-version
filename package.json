@@ -6,13 +6,14 @@
   "license": "MIT",
   "main": "dist/index.js",
   "scripts": {
-    "build": "ncc build ./src/index.js",
+    "build": "esbuild ./src/index.js --bundle --outfile=dist/index.js --platform=node --format=esm",
     "test": "vitest --coverage",
     "lint": "standard"
   },
   "dependencies": {
     "@actions/core": "^1.10.1",
-    "@actions/github": "^6.0.0"
+    "@actions/github": "^6.0.0",
+    "esbuild": "^0.23.1"
   },
   "devDependencies": {
     "@vercel/ncc": "^0.38.1",
