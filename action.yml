@@ -1,9 +1,9 @@
-name: Calendar Version
+name: Next Calendar Version
 author: Harm Matthias Harms
 runs:
   using: node20
   main: dist/index.js
-description: Calendar based versioning
+description: Get the next calendar based version
 branding:
   color: blue
   icon: calendar
