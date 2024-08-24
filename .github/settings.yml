@@ -42,6 +42,7 @@ branches:
       required_signatures: true
       required_pull_request_reviews: null
       required_status_checks:
+        strict: false
         contexts:
           - merge-gatekeeper
       restrictions: null
