@@ -1,4 +1,5 @@
 name-template: "$RESOLVED_VERSION 🤖"
+tag-template: "v$RESOLVED_VERSION"
 commitish: main
 template: |
   ## What’s Changed
