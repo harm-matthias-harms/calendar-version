@@ -14,7 +14,7 @@ function getOctoKit () {
 }
 
 function getTagPrefix () {
-  return core.getInput('tag_prefix')
+  return core.getInput('tag-prefix')
 }
 
 function getRefPrefix () {
@@ -46,10 +46,10 @@ export async function run () {
   core.info(`Tag: ${oldTag} -> ${newTag}`)
   core.info(`Ver: ${oldVer} -> ${newVer}`)
 
-  core.setOutput('old_tag', oldTag)
-  core.setOutput('old_version', oldVer)
-  core.setOutput('new_tag', newTag)
-  core.setOutput('new_version', newVer)
+  core.setOutput('old-tag', oldTag)
+  core.setOutput('old-version', oldVer)
+  core.setOutput('new-tag', newTag)
+  core.setOutput('new-version', newVer)
 }
 
 run()

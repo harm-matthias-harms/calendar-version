@@ -23,7 +23,7 @@ jobs:
         id: calendar-version
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-      - run: if [[ -z ${{ steps.calendar-version.outputs.old_tag }} ]]; then exit 1; fi
-      - run: if [[ -z ${{ steps.calendar-version.outputs.old_version }} ]]; then exit 1; fi
-      - run: if [[ -z ${{ steps.calendar-version.outputs.new_tag }} ]]; then exit 1; fi
-      - run: if [[ -z ${{ steps.calendar-version.outputs.new_version }} ]]; then exit 1; fi
+      - run: if [[ -z ${{ steps.calendar-version.outputs.old-tag }} ]]; then exit 1; fi
+      - run: if [[ -z ${{ steps.calendar-version.outputs.old-version }} ]]; then exit 1; fi
+      - run: if [[ -z ${{ steps.calendar-version.outputs.new-tag }} ]]; then exit 1; fi
+      - run: if [[ -z ${{ steps.calendar-version.outputs.new-version }} ]]; then exit 1; fi

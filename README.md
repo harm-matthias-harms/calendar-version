@@ -36,7 +36,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
       - uses: release-drafter/release-drafter@v6
         with:
-          tag: ${{ steps.calendar-version.outputs.new_tag }}
+          tag: ${{ steps.calendar-version.outputs.new-tag }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
@@ -46,16 +46,16 @@ jobs:
 | Input        | Description                                  | Default |
 | ------------ | -------------------------------------------- | ------- |
 | `token`      | The GitHub token                             | None    |
-| `tag_prefix` | A tag prefix, e.g. `v` leads to `v2024.1.17` | `""`    |
+| `tag-prefix` | A tag prefix, e.g. `v` leads to `v2024.1.17` | `""`    |
 
 ## Outputs
 
 | Output        | Description                                                                 |
 | ------------- | --------------------------------------------------------------------------- |
-| `old_tag`     | The highest version tag, prefix with `tag_prefix`, found in the repository. |
-| `old_version` | The highest version, found in the repository.                               |
-| `new_tag`     | The next version tag, prefix with `tag_prefix`.                             |
-| new_version   | The next version, based on the `old_version` and current date.              |
+| `old-tag`     | The highest version tag, prefix with `tag-prefix`, found in the repository. |
+| `old-version` | The highest version, found in the repository.                               |
+| `new-tag`     | The next version tag, prefix with `tag-prefix`.                             |
+| `new-version` | The next version, based on the `old-version` and current date.              |
 
 ## Attributions
 
