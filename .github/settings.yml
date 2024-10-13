@@ -20,6 +20,9 @@ labels:
   - name: bug
     color: "#d73a4a"
     description: Something isn't working
+  - name: breaking
+    color: "#d73a4a"
+    description: Breaking changes
   - name: feature
     color: "#93E04B"
     description: New functionality

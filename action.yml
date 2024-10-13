@@ -11,16 +11,16 @@ inputs:
   token:
     description: The github action token
     required: true
-  tag_prefix:
+  tag-prefix:
     description: "A prefix for the generated version tag"
     required: false
     default: ""
 outputs:
-  old_tag:
+  old-tag:
     description: The base tag used to generate the new version/tag
-  old_version:
+  old-version:
     description: The base version parsed from old_tag
-  new_tag:
+  new-tag:
     description: The generated tag
-  new_version:
+  new-version:
     description: The generated version
