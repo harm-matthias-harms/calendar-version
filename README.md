@@ -1,6 +1,6 @@
 # Calender Version
 
-Dead simple GitHub action to calculate the next calendar based release version `YYYY.M.build`, e.g. `2024.1.17`.
+Dead simple GitHub action to calculate the next calendar based release version `YYYY.MM.build`, e.g. `2024.01.17`.
 
 Good if you want to use calendar based versioning with other actions, such as:
 
@@ -46,7 +46,7 @@ jobs:
 | Input        | Description                                  | Default |
 | ------------ | -------------------------------------------- | ------- |
 | `token`      | The GitHub token                             | None    |
-| `tag-prefix` | A tag prefix, e.g. `v` leads to `v2024.1.17` | `""`    |
+| `tag-prefix` | A tag prefix, e.g. `v` leads to `v2024.01.17` | `""`    |
 
 ## Outputs
 
