@@ -8,7 +8,7 @@ export class Version {
   }
 
   toString () {
-    return `${this.year}.${this.month}.${this.build}`
+    return `${this.year}.${this.month.toString().padStart(2, '0')}.${this.build}`
   }
 
   isSameRelease (other) {

@@ -7,7 +7,7 @@ afterEach(() => {
 
 describe('parseVersion', () => {
   it('should parse a version string', () => {
-    expect(parseVersion('1.2.3')).toEqual(new Version(1, 2, 3))
+    expect(parseVersion('1.02.3')).toEqual(new Version(1, 2, 3))
   })
 
   it('should parse invalid version strings', () => {
@@ -36,7 +36,7 @@ describe('nextVersion', () => {
 describe('Version', () => {
   describe('toString', () => {
     it('should return a string', () => {
-      expect(new Version(1, 2, 3).toString()).toBe('1.2.3')
+      expect(new Version(1, 2, 3).toString()).toBe('1.02.3')
     })
   })
   describe('sort', () => {

@@ -3,7 +3,8 @@ pre-commit:
   commands:
     lint:
       glob: "*.js"
-      run: npm run lint {staged_files}
+      run: npm run lint -- --fix {staged_files}
+      stage_fixed: true
 pre-push:
   parallel: true
   scripts:
