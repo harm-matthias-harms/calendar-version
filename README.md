@@ -37,6 +37,7 @@ jobs:
       - uses: release-drafter/release-drafter@v6
         with:
           tag: ${{ steps.calendar-version.outputs.new-tag }}
+          name: ${{ steps.calendar-version.outputs.new-version }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 ```
