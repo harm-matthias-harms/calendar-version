@@ -20,15 +20,20 @@ categories:
 
 autolabeler:
   - label: breaking
-    branch: /breaking\/.+/
+    branch:
+      - '/breaking\/.+/'
   - label: feature
-    branch: /feature\/.+/
+    branch:
+      - '/feature\/.+/'
   - label: bug
-    branch: /bug(s)?\/.+/
+    branch:
+      - '/bug(s)?\/.+/'
   - label: chore
-    branch: /chore\/.+/
+    branch:
+      - '/chore\/.+/'
   - label: dependency
-    branch: /renovate\/.+/
+    branch:
+      - '/renovate|dependabot\/.+/'
 
 version-resolver:
   major:
