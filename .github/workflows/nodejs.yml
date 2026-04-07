@@ -26,9 +26,7 @@ jobs:
       - run: npm ci
       - run: npm run test -- --reporter=junit --outputFile=junit.xml
       - uses: codecov/codecov-action@v6
-        env:
-          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
-      - uses: codecov/test-results-action@v1
         if: ${{ !cancelled() }}
         with:
+          report_type: test_results
           token: ${{ secrets.CODECOV_TOKEN }}
