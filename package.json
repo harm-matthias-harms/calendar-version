@@ -15,8 +15,8 @@
   },
   "devDependencies": {
     "@vercel/ncc": "0.45.0",
-    "@vitest/coverage-v8": "4.1.11",
+    "@vitest/coverage-v8": "5.0.0",
     "standard": "17.1.2",
-    "vitest": "4.1.11"
+    "vitest": "5.0.0"
   }
 }
