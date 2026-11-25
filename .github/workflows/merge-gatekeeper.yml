@@ -12,6 +12,6 @@ jobs:
       checks: read
       statuses: read
     steps:
-      - uses: upsidr/merge-gatekeeper@v1
+      - uses: upsidr/merge-gatekeeper@v2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
